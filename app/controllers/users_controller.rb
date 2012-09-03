@@ -2,12 +2,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
-    end
+    @users = User.all#genera mucho codigo que no sirve para nada!!
+    #No vamos hacer aplicaciones usando scaffold? por que? eso es algo que deben grabar en su mente. jjejeje
   end
 
   # GET /users/1
